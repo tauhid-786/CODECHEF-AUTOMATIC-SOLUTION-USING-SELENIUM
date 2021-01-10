@@ -1,7 +1,10 @@
+#importing library
 from selenium import webdriver 
 from getpass import getpass
 import time
+# making an object of webdriver
 browser=webdriver.Chrome("C:/Users/hp/Desktop/chromedriver.exe")
+#searching required site
 browser.get("https:/codechef.com")
 username_element=browser.find_element_by_id("edit-name")
 print("please enter your username")
